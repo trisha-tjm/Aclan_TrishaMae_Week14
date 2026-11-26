@@ -39,7 +39,7 @@ class Week14App extends StatelessWidget {
           ),
         ),
       ),
-      // Palitan ng MoreDealsScreen() kapag kukunan ang Screen_2.png
+      // para sa screen 2 MoreDealsScreen().
       home: const HomePageScreen(),
     );
   }
@@ -98,7 +98,7 @@ class HomePageScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // purposeful stack: welcome 
+              // purposeful stack: welcome
               SizedBox(
                 height: 118,
                 width: double.infinity,
@@ -133,10 +133,7 @@ class HomePageScreen extends StatelessWidget {
                             'Discover amazing deals just for you....',
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 12,
-                            ),
+                            style: TextStyle(color: Colors.white, fontSize: 12),
                           ),
                         ],
                       ),
@@ -162,7 +159,9 @@ class HomePageScreen extends StatelessWidget {
               // Row 2 of 2x2 Category Grid
               Row(
                 children: [
-                  const Expanded(child: _SpaceTile('TRAVEL', Color(0xFF047857))),
+                  const Expanded(
+                    child: _SpaceTile('TRAVEL', Color(0xFF047857)),
+                  ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Container(
@@ -220,10 +219,7 @@ class MoreDealsScreen extends StatelessWidget {
         elevation: 0,
         leading: const Icon(Icons.chevron_left, size: 28),
         centerTitle: true,
-        title: Text(
-          'More',
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
+        title: Text('More', style: Theme.of(context).textTheme.titleMedium),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
